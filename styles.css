@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     display: flex;
     align-items: center;
@@ -11,50 +17,59 @@ body {
     font-family: Inter;
 }
 
-h1 {
-    font-weight: 500;
-    font-size: 20px;
-}
-
-a {
-    text-decoration: none;
-}
-
 .container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid rgb(204, 204, 204);
-    border-radius: 10px;
-    padding: 5em 8em;
+    width: 80%;
+    max-width: 500px;
 }
 
-.button {
-    background-color: #1390DE;
-    color: white;
-    border-radius: 20px;
-    border: none;
-    padding: .6em 4em;
-    margin-top: 3rem;
-    box-shadow: 0px 5px 10px rgb(184, 184, 184);
-    font-weight: 600;
+#title {
+    font-size: 36px;
 }
 
-.button:hover {
-    background-color: #19a5fc;
-    cursor: pointer;
-    transform: scale(1.1);
-}
-
-.input {
-    border: none;
-    border-bottom: 1px solid rgb(128, 128, 128);
+#subtitle {
     margin-top: 1rem;
-    padding: 1em 0;
-    text-align: center;
+    color: #737373;
 }
 
-.input:focus {
-    outline: none;
+#email-label {
+    margin-top: 64px;
+}
+
+#password-label {
+    margin-top: 32px;
+}
+
+#forgot-password {
+    margin-top: 8px;
+    text-align: right;
+    color: #0066FF;
+    text-decoration: none;
+}
+
+input {
+    margin-top: 8px;
+    border: none;
+    background-color: #F0F0F0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 16px;
+    border-radius: 8px;
+}
+
+input::placeholder {
+    color: #999999;
+}
+
+#login-button {
+    margin-top: 48px;
+    background-color: #0066FF;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 1rem 0;
 }
