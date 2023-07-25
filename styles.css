@@ -73,3 +73,8 @@ input::placeholder {
     border-radius: 8px;
     padding: 1rem 0;
 }
+
+#login-button:hover {
+    cursor: pointer;
+    background-color: hwb(216 25% 0%);
+}
